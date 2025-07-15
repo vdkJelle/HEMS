@@ -1,0 +1,76 @@
+[
+  {
+    "ContainingType": "HomeEnergyManagementSystem.Controllers.DevicesController",
+    "Method": "AddNewDevice",
+    "RelativePath": "api/Device",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDeviceDto",
+        "Type": "HomeEnergyManagementSystem.Dtos.CreateDeviceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HomeEnergyManagementSystem.Controllers.DevicesController",
+    "Method": "UpdateStateDevice",
+    "RelativePath": "api/Device",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateStateDto",
+        "Type": "HomeEnergyManagementSystem.Dtos.UpdateStateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HomeEnergyManagementSystem.Controllers.DevicesController",
+    "Method": "Delete",
+    "RelativePath": "api/Device",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HomeEnergyManagementSystem.Controllers.DevicesController",
+    "Method": "GetAllDevices",
+    "RelativePath": "api/Devices",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HomeEnergyManagementSystem.Controllers.EnergyUsageController",
+    "Method": "GetEnergyUsageAtTimestamp",
+    "RelativePath": "api/EnergyUsage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "time",
+        "Type": "System.DateTimeOffset",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

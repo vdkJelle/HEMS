@@ -1,0 +1,41 @@
+@HomeEnergyManagementSystem_HostAddress = http://localhost:5296
+
+###
+
+GET {{HomeEnergyManagementSystem_HostAddress}}/api/Devices/
+Accept: application/json
+
+###
+
+POST {{HomeEnergyManagementSystem_HostAddress}}/api/Device/
+Accept: application/json
+Content-Type:application/json
+
+{
+	"Type": "Refrigerator"
+}
+
+###
+
+# Add a device ID you received with the GET route above to remove the device in the HEMS
+DELETE {{HomeEnergyManagementSystem_HostAddress}}/api/Device?id=<<EnterDeviceIDHere>>
+Accept: application/json
+
+###
+
+# Add a device ID you received with the GET route above in the body to change it's Enabled state in the HEMS
+PUT {{HomeEnergyManagementSystem_HostAddress}}/api/Device/
+Accept: application/json
+Content-Type: application/json
+
+{
+	"Id": "<<EnterDeviceIDHere>>", 
+	"State": false
+}
+
+###
+
+GET {{HomeEnergyManagementSystem_HostAddress}}/api/EnergyUsage?time=2025-01-31T12:00:00%2B01:00
+Accept: application/json
+
+###
